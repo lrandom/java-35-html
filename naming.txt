@@ -1,0 +1,4 @@
+camelCase , fullName, myFullName -> biến
+PascalCase, FullName, MyFullName -> lớp Class
+under_score, full_name, my_full_name -> biến, python
+snake-case = kebab-case , full-name, my-full-name -> giá trị class trong thẻ 
