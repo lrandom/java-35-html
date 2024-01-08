@@ -1,0 +1,30 @@
+div {
+    background: red;
+    color: white
+}
+
+div {
+    background: green;
+    color: white;
+}
+
+p {
+    background: blue;
+    color: white;
+}
+
+/*ID SELECTOR*/
+#test_1 {
+    background: yellow;
+    color: black;
+}
+
+/*CLASS SELECTOR*/
+.para {
+    background: orange;
+    color: black;
+}
+
+.para_2{
+
+}
