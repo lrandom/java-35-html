@@ -8,25 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-<a href="https://google.com.vn">
-    Click here
-</a>
+<div></div>
+<span>Blue</span>
+<span>Red</span>
+<span>Green</span>
+</body>
 
-<img src="assets/img/demo.jpg"/>
 <style>
-    a:hover {
-        font-size: 60px;
+    div + span {
+        color: blue;
     }
 
-    img{
-        width: 100px;
-        height: 100px;
-    }
-
-    img:hover {
-        width: 200px;
-        height: 200px;
+    div ~ span {
+        color: red;
     }
 </style>
-</body>
 </html>

@@ -8,24 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-<a href="https://google.com.vn">
-    Click here
-</a>
 
-<img src="assets/img/demo.jpg"/>
+<ul>
+    <li>Java</li>
+    <li>PHP</li>
+    <li>JS</li>
+</ul>
+
 <style>
-    a:hover {
-        font-size: 60px;
+    /*THE MOST IMPORTANT PSEUDO SELECTOR MUST REMEMBER*/
+    ul li:first-child {
+        color: red;
     }
 
-    img{
-        width: 100px;
-        height: 100px;
+    ul li:last-child {
+        color: blue;
     }
 
-    img:hover {
-        width: 200px;
-        height: 200px;
+    ul li:nth-child(2) {
+        color: green;
     }
 </style>
 </body>
