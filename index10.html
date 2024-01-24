@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="card">
+    <div>Main content</div>
+
+    <button onclick="toggle()">Button</button>
+    <div class="toggle-content hidden">
+        Expand Content
+    </div>
+</div>
+
+<script>
+    function toggle() {
+        const nodeToggleContent = document.querySelector('.toggle-content');
+        nodeToggleContent.classList.toggle('hidden');
+    }
+</script>
+<style>
+    .card {
+        border: 1px solid #cdcdcd;
+        width: 300px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .hidden{
+        display: none;
+    }
+</style>
+</body>
+</html>
