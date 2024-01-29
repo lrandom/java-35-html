@@ -1,50 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <title>Title</title>
 </head>
 <body>
+<div class="photo-gallery">
+    <div class="photo-gallery__main-image">
+        <img src="imgs/anh_1.jpeg"/>
+    </div>
+
+    <div class="photo-gallery__thumbnails">
+        <div class="photo-gallery__thumbnail-item">
+            <img src="imgs/anh_1.jpeg"/>
+        </div>
+        <div class="photo-gallery__thumbnail-item">
+            <img src="imgs/anh_2.jpeg"/>
+        </div>
+        <div class="photo-gallery__thumbnail-item">
+            <img src="imgs/anh_3.jpeg"/>
+        </div>
+    </div>
+</div>
+
+<style>
+  .photo-gallery{
+    width: 800px;
+    margin: 0 auto;
+  }
+  .photo-gallery__main-image{
+    border: 1px solid #ccc;
+  }
+  .photo-gallery__main-image img{
+    width: 100%;
+    height: 500px;
+  }
+  /*BEM CSS*/
+  .photo-gallery__thumbnails{
+    display: flex;
+    justify-content: center;
+    gap: 10px
+  }
+
+  .photo-gallery__thumbnail-item img{
+    width: 100px;
+    height: 100px;
+  }
+</style>
+
+<script src="main.js"></script>
 
 </body>
-
-<script type="text/javascript">
-    //Web API
-    //alert("Hello World");
-    //confirm("Are you sure?");
-   /* console.log("Hello World");
-    console.warn("Hello World");
-    console.error("Hello World");
-
-    //strict mode
-    //global scope/lexical scope/function scope
-    //hoisting
-    //khoi tao lai dc
-    var name = "Luan";
-    var name = "Lam";
-
-    //ES6 ecmascript 2017
-    //ko co hoisting
-    //block scope {}
-    //ko khoi tao lai dc
-    let name2 = "Nam";
-    name = "HIHI";
-
-    //dn hang
-    const name3 = "Hung";*/
-
-    let fullName = `Nguyen Van A`;
-    alert(fullName);
-    let a = 10;
-    let b = 20;
-    let c = a + b;
-    console.log(c);
-</script>
-
-<script src="main.js">
-</script>
 </html>
