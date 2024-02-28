@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="box"></div>
+
+<button class="btn-move-box">Move Box</button>
+</body>
+
+<style>
+    .box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+
+<script>
+    //define object in js
+    //constructor function in js
+    //class
+    //object literal-> hay dùng
+    /*const cat = {
+        "my name": 'Tom',//thuộc tính
+        age: 2,
+        color: 'black',
+        weight: 5,
+        eat: function () {
+            console.log('eating');
+        },
+        drink: function () {
+            console.log('drinking');
+        }
+    };
+
+    cat["my name"];// truy cập thuộc tính
+    cat.eat();// dot nation operator -> gọi phương thức
+    cat.drink();*/
+
+    $('.btn-move-box').click(function () {
+        $('.box').animate({
+            left: '+=500px',
+            top: '+=50px'
+        }, 1000);
+    });
+
+    setTimeout(function () {
+        $('.box').animate({
+            left: '+=500px',
+            top: '+=50px'
+        }, 1000);
+    }, 2000);
+</script>
+</html>

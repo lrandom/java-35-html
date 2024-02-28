@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<input type="text" onblur="" onfocus=""/>
+</body>
+
+<script>
+    $('input').focus(function () {
+        $(this).css('background-color', 'red');
+    });
+
+    $('input').blur(function () {
+        $(this).css('background-color', 'white');
+    });
+
+    const inputNode = document.querySelector('input');
+    inputNode.addEventListener('focus', function () {
+        inputNode.style.backgroundColor = 'red';
+    });
+</script>
+
+<style>
+    input:focus{
+        background-color: red;
+    }
+</style>
+</html>

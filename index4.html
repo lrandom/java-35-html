@@ -7,17 +7,17 @@
 
 </head>
 <body>
-<div>
-    <p>hello</p>
-</div>
-<div>
-    <p>hello</p>
-</div>
-<button>Delete</button>
+<ul>
+    <li>PHP</li>
+    <li>Java</li>
+    <li>JS</li>
+</ul>
+
+<button>Add After DIV</button>
 
 <script>
     $('button').click(function () {
-        $('div').remove();
+        $('ul').prepend('<li>Python</li>');
     });
 </script>
 </body>
